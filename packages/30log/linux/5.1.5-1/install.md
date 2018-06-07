@@ -15,16 +15,16 @@
 
 ### Resolved dependencies:
 - lua 5.1.5-1
-- 30log 1.3.0-1
+- 30log 1.2.0-1
 
 ## 3. Fetching packages
 
 - **lua 5.1.5-1**
     - **remote:** git://github.com/LuaDist-core/lua.git
     - **local:** /home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/lua 5.1.5-1
-- **30log 1.3.0-1**
+- **30log 1.2.0-1**
     - **remote:** git://github.com/LuaDist-testing/30log.git
-    - **local:** /home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1
 
 ## 4. Installing packages
 
@@ -56,10 +56,10 @@
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/share/luadist2/manifest-file'
 
-### 30log 1.3.0-1
-- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1/30log-1.3.0-1.rockspec'
-- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1'
-- Building into '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1-build'
+### 30log 1.2.0-1
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1/30log-1.2.0-1.rockspec'
+- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1'
+- Building into '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1-build'
 - **CMake Variables:**
     - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
     - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/include
@@ -76,9 +76,9 @@
     - `INSTALL_LIB` = lib
     - `INSTALL_LMOD` = lib/lua
     - `INSTALL_SHARE` = share
-- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1-build" && cmake -P cmake_install.cmake'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.3.0-1-build'
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/tmp/30log 1.2.0-1-build'
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.1.5-1/share/luadist2/manifest-file'
