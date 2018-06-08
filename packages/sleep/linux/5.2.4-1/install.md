@@ -99,39 +99,39 @@ CMake Error at /usr/local/cmake-3.9.2/share/cmake-3.9/Modules/CMakeTestCCompiler
 
   
 
-  Run Build Command:"/usr/bin/make" "cmTC_04330/fast"
+  Run Build Command:"/usr/bin/make" "cmTC_4aa5e/fast"
 
-  /usr/bin/make -f CMakeFiles/cmTC_04330.dir/build.make
-  CMakeFiles/cmTC_04330.dir/build
+  /usr/bin/make -f CMakeFiles/cmTC_4aa5e.dir/build.make
+  CMakeFiles/cmTC_4aa5e.dir/build
 
   make[1]: Entering directory
   `/home/travis/build/LuaDist-testing/_luadist_output/lua
   5.2.4-1/install/tmp/sleep 1.0.0-3-build/CMakeFiles/CMakeTmp'
 
-  Building C object CMakeFiles/cmTC_04330.dir/testCCompiler.c.o
+  Building C object CMakeFiles/cmTC_4aa5e.dir/testCCompiler.c.o
 
-  /usr/bin/gcc -o CMakeFiles/cmTC_04330.dir/testCCompiler.c.o -c
+  /usr/bin/gcc -o CMakeFiles/cmTC_4aa5e.dir/testCCompiler.c.o -c
   "/home/travis/build/LuaDist-testing/_luadist_output/lua
   5.2.4-1/install/tmp/sleep
   1.0.0-3-build/CMakeFiles/CMakeTmp/testCCompiler.c"
 
-  Linking C executable cmTC_04330
+  Linking C executable cmTC_4aa5e
 
   /usr/local/cmake-3.9.2/bin/cmake -E cmake_link_script
-  CMakeFiles/cmTC_04330.dir/link.txt --verbose=1
+  CMakeFiles/cmTC_4aa5e.dir/link.txt --verbose=1
 
   /usr/bin/gcc $(CFLAGS) -rdynamic
-  CMakeFiles/cmTC_04330.dir/testCCompiler.c.o -o cmTC_04330
+  CMakeFiles/cmTC_4aa5e.dir/testCCompiler.c.o -o cmTC_4aa5e
 
   gcc: error: $(CFLAGS): No such file or directory
 
-  make[1]: *** [cmTC_04330] Error 1
+  make[1]: *** [cmTC_4aa5e] Error 1
 
   make[1]: Leaving directory
   `/home/travis/build/LuaDist-testing/_luadist_output/lua
   5.2.4-1/install/tmp/sleep 1.0.0-3-build/CMakeFiles/CMakeTmp'
 
-  make: *** [cmTC_04330/fast] Error 2
+  make: *** [cmTC_4aa5e/fast] Error 2
 
   
 
