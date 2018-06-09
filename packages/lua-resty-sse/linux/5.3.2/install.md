@@ -16,7 +16,7 @@
 ### Resolved dependencies:
 - lua 5.3.2-1
 - lua-resty-http 0.12-0
-- lua-resty-sse 0.1.2-1
+- lua-resty-sse 0.2.0-1
 
 ## 3. Fetching packages
 
@@ -26,9 +26,9 @@
 - **lua-resty-http 0.12-0**
     - **remote:** git://github.com/LuaDist-testing/lua-resty-http.git
     - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-http 0.12-0
-- **lua-resty-sse 0.1.2-1**
+- **lua-resty-sse 0.2.0-1**
     - **remote:** git://github.com/LuaDist-testing/lua-resty-sse.git
-    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1
 
 ## 4. Installing packages
 
@@ -87,10 +87,10 @@
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/share/luadist2/manifest-file'
 
-### lua-resty-sse 0.1.2-1
-- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1/lua-resty-sse-0.1.2-1.rockspec'
-- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1'
-- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1-build'
+### lua-resty-sse 0.2.0-1
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1/lua-resty-sse-0.2.0-1.rockspec'
+- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1'
+- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1-build'
 - **CMake Variables:**
     - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
     - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/include
@@ -107,9 +107,9 @@
     - `INSTALL_LIB` = lib
     - `INSTALL_LMOD` = lib/lua
     - `INSTALL_SHARE` = share
-- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1-build" && cmake -P cmake_install.cmake'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.1.2-1-build'
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/lua-resty-sse 0.2.0-1-build'
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/share/luadist2/manifest-file'
