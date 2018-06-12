@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.2.4-1 rfcvalid'
 
 
@@ -82,3 +84,14 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "rfcvalid.1035"` - OK
+ -  - `require "rfcvalid.2616"` - OK
+ -  - `require "rfcvalid.6265"` - OK
+ -  - `require "rfcvalid.6749"` - OK
+ -  - `require "rfcvalid.7230"` - OK
+ -  - `require "rfcvalid.implc"` - OK
+ -  - `require "rfcvalid.util"` - OK
+
