@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 30log'
 
 
@@ -82,3 +84,64 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "30log"` - OK
+ -  - `require "30log-clean"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module '30log-clean' not found:
+	no field package.preload['30log-clean']
+	no file '/home/travis/build/LuaDist-testing/30log/../_travis_scripts/30log-clean.lua'
+	no file './30log-clean.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-clean.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-clean/init.lua'
+	no file './30log-clean.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-clean.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "30log-commons"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module '30log-commons' not found:
+	no field package.preload['30log-commons']
+	no file '/home/travis/build/LuaDist-testing/30log/../_travis_scripts/30log-commons.lua'
+	no file './30log-commons.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-commons.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-commons/init.lua'
+	no file './30log-commons.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-commons.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "30log-global"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module '30log-global' not found:
+	no field package.preload['30log-global']
+	no file '/home/travis/build/LuaDist-testing/30log/../_travis_scripts/30log-global.lua'
+	no file './30log-global.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-global.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-global/init.lua'
+	no file './30log-global.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-global.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "30log-singleton"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module '30log-singleton' not found:
+	no field package.preload['30log-singleton']
+	no file '/home/travis/build/LuaDist-testing/30log/../_travis_scripts/30log-singleton.lua'
+	no file './30log-singleton.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-singleton.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-singleton/init.lua'
+	no file './30log-singleton.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/30log-singleton.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+
