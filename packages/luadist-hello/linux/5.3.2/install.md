@@ -87,5 +87,6 @@
 
 # Report for task 'require'
 
- -  - `require "luadist-hello"` - OK
+Error getting current tag: [[fatal: No names found, cannot describe anything.
+]]
 
