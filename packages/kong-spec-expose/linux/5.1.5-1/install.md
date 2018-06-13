@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 kong-spec-expose'
 
 
@@ -82,3 +84,48 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "kong.plugins.kong-spec-expose.access"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: .../../lib/lua/kong/plugins/kong-spec-expose/access.lua:2: module 'pl.stringx' not found:
+	no field package.preload['pl.stringx']
+	no file '/home/travis/build/LuaDist-testing/kong-spec-expose/../_travis_scripts/pl/stringx.lua'
+	no file './pl/stringx.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/stringx.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/stringx/init.lua'
+	no file './pl/stringx/init.lua'
+	no file './pl/stringx.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/stringx.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	.../../lib/lua/kong/plugins/kong-spec-expose/access.lua:2: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.kong-spec-expose.handler"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...../lib/lua/kong/plugins/kong-spec-expose/handler.lua:1: module 'kong.plugins.base_plugin' not found:
+	no field package.preload['kong.plugins.base_plugin']
+	no file '/home/travis/build/LuaDist-testing/kong-spec-expose/../_travis_scripts/kong/plugins/base_plugin.lua'
+	no file './kong/plugins/base_plugin.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/base_plugin.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/base_plugin/init.lua'
+	no file './kong/plugins/base_plugin/init.lua'
+	no file './kong/plugins/base_plugin.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/base_plugin.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...../lib/lua/kong/plugins/kong-spec-expose/handler.lua:1: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.kong-spec-expose.schema"` - OK
+
