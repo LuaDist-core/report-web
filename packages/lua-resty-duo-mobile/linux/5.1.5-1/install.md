@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 lua-resty-duo-mobile'
 
 
@@ -113,3 +115,27 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "resty.duo"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...put/lua 5.1.5-1/install/bin/../lib/lua/resty/duo.lua:1: module 'cjson.safe' not found:
+	no field package.preload['cjson.safe']
+	no file '/home/travis/build/LuaDist-testing/lua-resty-duo-mobile/../_travis_scripts/cjson/safe.lua'
+	no file './cjson/safe.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/cjson/safe.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/cjson/safe/init.lua'
+	no file './cjson/safe/init.lua'
+	no file './cjson/safe.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/cjson/safe.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './cjson.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/cjson.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...put/lua 5.1.5-1/install/bin/../lib/lua/resty/duo.lua:1: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+
