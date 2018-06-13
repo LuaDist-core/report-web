@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.2.4-1 lua-livr'
 
 
@@ -21,27 +23,27 @@
 
 - **lua 5.2.4-1**
     - **remote:** git://github.com/LuaDist-core/lua.git
-    - **local:** /home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1
 - **lua-livr 0.2.0-1**
     - **remote:** git://github.com/LuaDist-testing/lua-livr.git
-    - **local:** /home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1
 
 ## 4. Installing packages
 
 
 ### lua 5.2.4-1
-- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1/lua-5.2.4-1.rockspec'
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1/lua-5.2.4-1.rockspec'
 - Package 'lua 5.2.4-1': using CMakeLists.txt provided by package itself
-- Building into '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1-build'
+- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build'
 - **CMake Variables:**
     - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
-    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/include
+    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/include
     - `CMAKE_INSTALL_NAME_DIR` = @executable_path/../lib
-    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1
+    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install
     - `CMAKE_INSTALL_RPATH` = $ORIGIN/../lib
     - `CMAKE_INSTALL_RPATH_USE_LINK_PATH` = TRUE
-    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/lib;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/bin
-    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/bin
+    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/lib;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
     - `CMAKE_SKIP_BUILD_RPATH` = FALSE
     - `INSTALL_BIN` = bin
     - `INSTALL_CMOD` = lib/lua
@@ -49,26 +51,26 @@
     - `INSTALL_LIB` = lib
     - `INSTALL_LMOD` = lib/lua
     - `INSTALL_SHARE` = share
-- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1-build" && cmake -P cmake_install.cmake'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua 5.2.4-1-build'
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build'
 
 - *hint:* If you wish to keep these directories, set the debug flag
-- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/share/luadist2/manifest-file'
+- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
 
 ### lua-livr 0.2.0-1
-- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1/lua-livr-0.2.0-1.rockspec'
-- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1'
-- Building into '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1-build'
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1/lua-livr-0.2.0-1.rockspec'
+- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1'
+- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1-build'
 - **CMake Variables:**
     - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
-    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/include
+    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/include
     - `CMAKE_INSTALL_NAME_DIR` = @executable_path/../lib
-    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1
+    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install
     - `CMAKE_INSTALL_RPATH` = $ORIGIN/../lib
     - `CMAKE_INSTALL_RPATH_USE_LINK_PATH` = TRUE
-    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/lib;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/bin
-    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/bin
+    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/lib;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
     - `CMAKE_SKIP_BUILD_RPATH` = FALSE
     - `INSTALL_BIN` = bin
     - `INSTALL_CMOD` = lib/lua
@@ -76,9 +78,21 @@
     - `INSTALL_LIB` = lib
     - `INSTALL_LMOD` = lib/lua
     - `INSTALL_SHARE` = share
-- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1-build" && cmake -P cmake_install.cmake'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1'
-- Removing '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/tmp/lua-livr 0.2.0-1-build'
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua-livr 0.2.0-1-build'
 
 - *hint:* If you wish to keep these directories, set the debug flag
-- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_install/lua 5.2.4-1/share/luadist2/manifest-file'
+- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "LIVR.Rules.Common"` - OK
+ -  - `require "LIVR.Rules.Meta"` - OK
+ -  - `require "LIVR.Rules.Modifiers"` - OK
+ -  - `require "LIVR.Rules.Numeric"` - OK
+ -  - `require "LIVR.Rules.Special"` - OK
+ -  - `require "LIVR.Rules.String"` - OK
+ -  - `require "LIVR.Validator"` - OK
+ -  - `require "LIVR.helpers"` - OK
+
