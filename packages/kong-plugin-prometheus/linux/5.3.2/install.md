@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 kong-plugin-prometheus'
 
 
@@ -19,3 +21,18 @@
 - **Error:** Package lua 5.3.2 needed, but installed at version 5.2.4-1.
 - Trying to force usage of 'lua 5.1.5-1' to solve dependency resolving issues
 - **Error:** Package lua 5.3.2 needed, but installed at version 5.1.5-1.
+- **Error:** No suitable candidate for package "kong-plugin-prometheus" found.
+
+# Report for task 'require'
+
+ -  - `require "kong.plugins.prometheus.api"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua’: No such file or directory
+]]
+ -  - `require "kong.plugins.prometheus.handler"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua’: No such file or directory
+]]
+ -  - `require "kong.plugins.prometheus.logger"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua’: No such file or directory
+]]
+ -  - `require "kong.plugins.prometheus.prometheus"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua’: No such file or directory
+]]
+ -  - `require "kong.plugins.prometheus.schema"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua’: No such file or directory
+]]
+
