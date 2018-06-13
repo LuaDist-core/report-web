@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 kong-splunk-log'
 
 
@@ -82,3 +84,50 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "kong.plugins.kong-splunk-log.basic"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...in/../lib/lua/kong/plugins/kong-splunk-log/basic.lua:1: module 'pl.tablex' not found:
+	no field package.preload['pl.tablex']
+	no file '/home/travis/build/LuaDist-testing/kong-splunk-log/../_travis_scripts/pl/tablex.lua'
+	no file './pl/tablex.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex/init.lua'
+	no file './pl/tablex/init.lua'
+	no file './pl/tablex.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...in/../lib/lua/kong/plugins/kong-splunk-log/basic.lua:1: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.kong-splunk-log.handler"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...in/../lib/lua/kong/plugins/kong-splunk-log/basic.lua:1: module 'pl.tablex' not found:
+	no field package.preload['pl.tablex']
+	no file '/home/travis/build/LuaDist-testing/kong-splunk-log/../_travis_scripts/pl/tablex.lua'
+	no file './pl/tablex.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex/init.lua'
+	no file './pl/tablex/init.lua'
+	no file './pl/tablex.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl/tablex.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/pl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...in/../lib/lua/kong/plugins/kong-splunk-log/basic.lua:1: in main chunk
+	[C]: in function 'require'
+	.../../lib/lua/kong/plugins/kong-splunk-log/handler.lua:1: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.kong-splunk-log.schema"` - OK
+
