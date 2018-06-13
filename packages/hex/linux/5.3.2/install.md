@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 hex'
 
 
@@ -82,3 +84,8 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "hex"` - OK
+
