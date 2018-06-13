@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 lua-minittp'
 
 
@@ -186,3 +188,83 @@
 
 ### luaposix 34.0.1-3
 - **Error:** Could not find rockspec for package 'luaposix 34.0.1-3', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/luaposix 34.0.1-3/luaposix-34.0.1-3.rockspec'
+- **Error:** Error installing: Could not find rockspec for package 'luaposix 34.0.1-3', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/luaposix 34.0.1-3/luaposix-34.0.1-3.rockspec'
+
+# Report for task 'require'
+
+ -  - `require "minittp"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'minittp' not found:
+	no field package.preload['minittp']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp.lua'
+	no file './minittp.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp/init.lua'
+	no file './minittp/init.lua'
+	no file './minittp.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "minittp_engine"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'minittp_engine' not found:
+	no field package.preload['minittp_engine']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_engine.lua'
+	no file './minittp_engine.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_engine.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_engine/init.lua'
+	no file './minittp_engine/init.lua'
+	no file './minittp_engine.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_engine.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "minittp_fcgi"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'minittp_fcgi' not found:
+	no field package.preload['minittp_fcgi']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_fcgi.lua'
+	no file './minittp_fcgi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_fcgi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_fcgi/init.lua'
+	no file './minittp_fcgi/init.lua'
+	no file './minittp_fcgi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_fcgi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "minittp_io"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'minittp_io' not found:
+	no field package.preload['minittp_io']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_io.lua'
+	no file './minittp_io.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_io.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_io/init.lua'
+	no file './minittp_io/init.lua'
+	no file './minittp_io.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_io.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "minittp_util"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'minittp_util' not found:
+	no field package.preload['minittp_util']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_util.lua'
+	no file './minittp_util.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_util.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_util/init.lua'
+	no file './minittp_util/init.lua'
+	no file './minittp_util.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/minittp_util.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+

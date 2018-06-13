@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 lua-minittp'
 
 
@@ -156,3 +158,78 @@
 ### luaposix 33.2.1-1
 - Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/luaposix 33.2.1-1/luaposix-33.2.1-1.rockspec'
 - **Error:** Could not generate cmake commands for package 'luaposix 33.2.1-1': Unhandled rockspec build type: "command"
+- **Error:** Error installing: Could not generate cmake commands for package 'luaposix 33.2.1-1': Unhandled rockspec build type: "command"
+
+# Report for task 'require'
+
+ -  - `require "minittp"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'minittp' not found:
+	no field package.preload['minittp']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp.lua'
+	no file './minittp.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp/init.lua'
+	no file './minittp.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "minittp_engine"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'minittp_engine' not found:
+	no field package.preload['minittp_engine']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_engine.lua'
+	no file './minittp_engine.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_engine.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_engine/init.lua'
+	no file './minittp_engine.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_engine.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "minittp_fcgi"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'minittp_fcgi' not found:
+	no field package.preload['minittp_fcgi']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_fcgi.lua'
+	no file './minittp_fcgi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_fcgi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_fcgi/init.lua'
+	no file './minittp_fcgi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_fcgi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "minittp_io"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'minittp_io' not found:
+	no field package.preload['minittp_io']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_io.lua'
+	no file './minittp_io.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_io.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_io/init.lua'
+	no file './minittp_io.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_io.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "minittp_util"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'minittp_util' not found:
+	no field package.preload['minittp_util']
+	no file '/home/travis/build/LuaDist-testing/lua-minittp/../_travis_scripts/minittp_util.lua'
+	no file './minittp_util.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_util.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_util/init.lua'
+	no file './minittp_util.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/minittp_util.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+
