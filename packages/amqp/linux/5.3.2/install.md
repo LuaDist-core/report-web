@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 amqp'
 
 
@@ -82,3 +84,28 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "amqp"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: ...luadist_output/lua 5.3.2/install/bin/../lib/lua/amqp.lua:24: module 'socket' not found:
+	no field package.preload['socket']
+	no file '/home/travis/build/LuaDist-testing/amqp/../_travis_scripts/socket.lua'
+	no file './socket.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/socket.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/socket/init.lua'
+	no file './socket.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/socket.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...luadist_output/lua 5.3.2/install/bin/../lib/lua/amqp.lua:24: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "amqp/bitopers"` - OK
+ -  - `require "amqp/buffer"` - OK
+ -  - `require "amqp/consts"` - OK
+ -  - `require "amqp/frame"` - OK
+ -  - `require "amqp/logger"` - OK
+

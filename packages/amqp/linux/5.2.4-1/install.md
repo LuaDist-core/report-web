@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.2.4-1 amqp'
 
 
@@ -82,3 +84,53 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "amqp"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/lua: error loading module 'amqp.bitopers' from file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua':
+	...put/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua:20: 'end' expected near '&'
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	...utput/lua 5.2.4-1/install/bin/../lib/lua/amqp/buffer.lua:10: in main chunk
+	[C]: in function 'require'
+	...output/lua 5.2.4-1/install/bin/../lib/lua/amqp/frame.lua:12: in main chunk
+	[C]: in function 'require'
+	...adist_output/lua 5.2.4-1/install/bin/../lib/lua/amqp.lua:8: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "amqp/bitopers"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/lua: error loading module 'amqp/bitopers' from file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua':
+	...put/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua:20: 'end' expected near '&'
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "amqp/buffer"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/lua: error loading module 'amqp.bitopers' from file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua':
+	...put/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua:20: 'end' expected near '&'
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	...utput/lua 5.2.4-1/install/bin/../lib/lua/amqp/buffer.lua:10: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "amqp/consts"` - OK
+ -  - `require "amqp/frame"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/lua: error loading module 'amqp.bitopers' from file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua':
+	...put/lua 5.2.4-1/install/bin/../lib/lua/amqp/bitopers.lua:20: 'end' expected near '&'
+stack traceback:
+	[C]: in ?
+	[C]: in function 'require'
+	...utput/lua 5.2.4-1/install/bin/../lib/lua/amqp/buffer.lua:10: in main chunk
+	[C]: in function 'require'
+	...output/lua 5.2.4-1/install/bin/../lib/lua/amqp/frame.lua:12: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "amqp/logger"` - OK
+
