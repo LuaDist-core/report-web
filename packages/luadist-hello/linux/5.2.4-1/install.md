@@ -87,5 +87,5 @@
 
 # Report for task 'require'
 
-Could not find any rockspec files.
+ -  - `require "luadist-hello"` - OK
 
