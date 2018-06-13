@@ -25,6 +25,5 @@
 
 # Report for task 'require'
 
-Error getting current tag: [[fatal: No names found, cannot describe anything.
-]]
+Could not find any rockspec files.
 
