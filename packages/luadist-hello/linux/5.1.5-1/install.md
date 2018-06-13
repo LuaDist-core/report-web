@@ -25,5 +25,6 @@
 
 # Report for task 'require'
 
-Could not find any rockspec files.
+ -  - `require "luadist-hello"` - FAIL - [[timeout: failed to run command ‘/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua’: No such file or directory
+]]
 
