@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 kong-plugin-zipkin'
 
 
@@ -159,3 +161,116 @@
 
 ### luaossl 20180530-0
 - **Error:** Could not find rockspec for package 'luaossl 20180530-0', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/luaossl 20180530-0/luaossl-20180530-0.rockspec'
+- **Error:** Error installing: Could not find rockspec for package 'luaossl 20180530-0', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/luaossl 20180530-0/luaossl-20180530-0.rockspec'
+
+# Report for task 'require'
+
+ -  - `require "kong.plugins.zipkin.codec"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.codec' not found:
+	no field package.preload['kong.plugins.zipkin.codec']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/codec.lua'
+	no file './kong/plugins/zipkin/codec.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/codec.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/codec/init.lua'
+	no file './kong/plugins/zipkin/codec/init.lua'
+	no file './kong/plugins/zipkin/codec.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/codec.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.zipkin.handler"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.handler' not found:
+	no field package.preload['kong.plugins.zipkin.handler']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/handler.lua'
+	no file './kong/plugins/zipkin/handler.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/handler.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/handler/init.lua'
+	no file './kong/plugins/zipkin/handler/init.lua'
+	no file './kong/plugins/zipkin/handler.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/handler.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.zipkin.opentracing"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.opentracing' not found:
+	no field package.preload['kong.plugins.zipkin.opentracing']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/opentracing.lua'
+	no file './kong/plugins/zipkin/opentracing.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/opentracing.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/opentracing/init.lua'
+	no file './kong/plugins/zipkin/opentracing/init.lua'
+	no file './kong/plugins/zipkin/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.zipkin.random_sampler"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.random_sampler' not found:
+	no field package.preload['kong.plugins.zipkin.random_sampler']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/random_sampler.lua'
+	no file './kong/plugins/zipkin/random_sampler.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/random_sampler.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/random_sampler/init.lua'
+	no file './kong/plugins/zipkin/random_sampler/init.lua'
+	no file './kong/plugins/zipkin/random_sampler.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/random_sampler.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.zipkin.reporter"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.reporter' not found:
+	no field package.preload['kong.plugins.zipkin.reporter']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/reporter.lua'
+	no file './kong/plugins/zipkin/reporter.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/reporter.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/reporter/init.lua'
+	no file './kong/plugins/zipkin/reporter/init.lua'
+	no file './kong/plugins/zipkin/reporter.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/reporter.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "kong.plugins.zipkin.schema"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'kong.plugins.zipkin.schema' not found:
+	no field package.preload['kong.plugins.zipkin.schema']
+	no file '/home/travis/build/LuaDist-testing/kong-plugin-zipkin/../_travis_scripts/kong/plugins/zipkin/schema.lua'
+	no file './kong/plugins/zipkin/schema.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/schema.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/schema/init.lua'
+	no file './kong/plugins/zipkin/schema/init.lua'
+	no file './kong/plugins/zipkin/schema.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong/plugins/zipkin/schema.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/kong.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+
