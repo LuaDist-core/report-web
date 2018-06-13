@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 openssl-baikal'
 
 
@@ -139,4 +141,87 @@ CMake Error at CMakeLists.txt:45 (set):
   Invalid character ('(') in a variable name: ''
 
 
+
+- **Error:** Error installing: Error building package 'openssl-baikal 1.0.0-1': Could not preload the CMake cache script '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/openssl-baikal 1.0.0-1-build/cmake.cache'
+stdout:
+loading initial cache file cache.cmake
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Lua: /home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/lib/liblua.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "5.1.5") 
+-- Configuring incomplete, errors occurred!
+See also "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/openssl-baikal 1.0.0-1-build/CMakeFiles/CMakeOutput.log".
+
+stderr:
+CMake Warning at CMakeLists.txt:40 (find_package):
+  By not providing "FindOPENSSL.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "OPENSSL", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "OPENSSL" with any
+  of the following names:
+
+    OPENSSLConfig.cmake
+    openssl-config.cmake
+
+  Add the installation prefix of "OPENSSL" to CMAKE_PREFIX_PATH or set
+  "OPENSSL_DIR" to a directory containing one of the above files.  If
+  "OPENSSL" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+CMake Error at CMakeLists.txt:45 (set):
+  Syntax error in cmake code at
+
+    /home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/openssl-baikal 1.0.0-1/CMakeLists.txt:45
+
+  when parsing string
+
+    ${{OPENSSL_INCDIR}}
+
+  Invalid character ('{') in a variable name: ''
+
+
+CMake Error at CMakeLists.txt:45 (set):
+  Syntax error in cmake code at
+
+    /home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/openssl-baikal 1.0.0-1/CMakeLists.txt:45
+
+  when parsing string
+
+    ${(OPENSSL_DIR)/include}
+
+  Invalid character ('(') in a variable name: ''
+
+
+
+
+# Report for task 'require'
+
+ -  - `require "openssl"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'openssl' not found:
+	no field package.preload['openssl']
+	no file '/home/travis/build/LuaDist-testing/openssl-baikal/../_travis_scripts/openssl.lua'
+	no file './openssl.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/openssl.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/openssl/init.lua'
+	no file './openssl/init.lua'
+	no file './openssl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/openssl.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
 
