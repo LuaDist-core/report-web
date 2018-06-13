@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.2.4-1 dromozoa-png'
 
 
@@ -59,3 +61,9 @@
 ### dromozoa-png 1.2-1
 - Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/dromozoa-png 1.2-1/dromozoa-png-1.2-1.rockspec'
 - **Error:** Could not generate cmake commands for package 'dromozoa-png 1.2-1': Unhandled rockspec build type: "make"
+- **Error:** Error installing: Could not generate cmake commands for package 'dromozoa-png 1.2-1': Unhandled rockspec build type: "make"
+
+# Report for task 'require'
+
+Build type "make" not supported for testing module requires.
+
