@@ -14,16 +14,78 @@
 
 ## 2. Dependency solving
 
-- **Error:** Error getting dependency of "luadist-hello 1.0-0": Package lua ~> 5.3 needed, but selected at version 5.2.4-1.
-- Trying to force usage of 'lua 5.3.2-1' to solve dependency resolving issues
-- **Error:** Package lua 5.2.4-1 needed, but installed at version 5.3.2-1.
-- Trying to force usage of 'lua 5.2.4-1' to solve dependency resolving issues
-- **Error:** Error getting dependency of "luadist-hello 1.0-0": Package lua ~> 5.3 needed, but installed at version 5.2.4-1.
-- Trying to force usage of 'lua 5.1.5-1' to solve dependency resolving issues
-- **Error:** Package lua 5.2.4-1 needed, but installed at version 5.1.5-1.
-- **Error:** Error getting dependency of "luadist-hello 1.0-0": Package lua ~> 5.3 needed, but selected at version 5.2.4-1.
+
+### Resolved dependencies:
+- lua 5.2.4-1
+- luadist-hello 1.0-0
+
+## 3. Fetching packages
+
+- **lua 5.2.4-1**
+    - **remote:** git://github.com/LuaDist-core/lua.git
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1
+- **luadist-hello 1.0-0**
+    - **remote:** git://github.com/LuaDist-testing/luadist-hello.git
+    - **local:** /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0
+
+## 4. Installing packages
+
+
+### lua 5.2.4-1
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1/lua-5.2.4-1.rockspec'
+- Package 'lua 5.2.4-1': using CMakeLists.txt provided by package itself
+- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build'
+- **CMake Variables:**
+    - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
+    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/include
+    - `CMAKE_INSTALL_NAME_DIR` = @executable_path/../lib
+    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install
+    - `CMAKE_INSTALL_RPATH` = $ORIGIN/../lib
+    - `CMAKE_INSTALL_RPATH_USE_LINK_PATH` = TRUE
+    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/lib;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_SKIP_BUILD_RPATH` = FALSE
+    - `INSTALL_BIN` = bin
+    - `INSTALL_CMOD` = lib/lua
+    - `INSTALL_ETC` = etc
+    - `INSTALL_LIB` = lib
+    - `INSTALL_LMOD` = lib/lua
+    - `INSTALL_SHARE` = share
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/lua 5.2.4-1-build'
+
+- *hint:* If you wish to keep these directories, set the debug flag
+- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
+
+### luadist-hello 1.0-0
+- Loaded rockspec from '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0/luadist-hello-1.0-0.rockspec'
+- Generated CMake file in '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0'
+- Building into '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0-build'
+- **CMake Variables:**
+    - `CMAKE_BUILD_WITH_INSTALL_RPATH` = FALSE
+    - `CMAKE_INCLUDE_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/include
+    - `CMAKE_INSTALL_NAME_DIR` = @executable_path/../lib
+    - `CMAKE_INSTALL_PREFIX` = /home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install
+    - `CMAKE_INSTALL_RPATH` = $ORIGIN/../lib
+    - `CMAKE_INSTALL_RPATH_USE_LINK_PATH` = TRUE
+    - `CMAKE_LIBRARY_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/lib;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_PROGRAM_PATH` = ;/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin
+    - `CMAKE_SKIP_BUILD_RPATH` = FALSE
+    - `INSTALL_BIN` = bin
+    - `INSTALL_CMOD` = lib/lua
+    - `INSTALL_ETC` = etc
+    - `INSTALL_LIB` = lib
+    - `INSTALL_LMOD` = lib/lua
+    - `INSTALL_SHARE` = share
+- Executing 'cd "/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0-build" && cmake -P cmake_install.cmake'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0'
+- Removing '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/tmp/luadist-hello 1.0-0-build'
+
+- *hint:* If you wish to keep these directories, set the debug flag
+- Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
 
 # Report for task 'require'
 
-Could not find any rockspec files.
+ -  - `require "luadist-hello"` - OK
 
