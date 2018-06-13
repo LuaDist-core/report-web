@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.2.4-1 lua-easy-crypto'
 
 
@@ -113,3 +115,27 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "resty.easy-crypto"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/lua: ... 5.2.4-1/install/bin/../lib/lua/resty/nettle/library.lua:1: module 'ffi' not found:
+	no field package.preload['ffi']
+	no file '/home/travis/build/LuaDist-testing/lua-easy-crypto/../_travis_scripts/ffi.lua'
+	no file './ffi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/ffi.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/ffi/init.lua'
+	no file './ffi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/ffi.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.2.4-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	... 5.2.4-1/install/bin/../lib/lua/resty/nettle/library.lua:1: in main chunk
+	[C]: in function 'require'
+	...2.4-1/install/bin/../lib/lua/resty/nettle/knuth-lfib.lua:1: in main chunk
+	[C]: in function 'require'
+	...lua 5.2.4-1/install/bin/../lib/lua/resty/easy-crypto.lua:2: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+
