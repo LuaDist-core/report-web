@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 lua-libzip'
 
 
@@ -89,4 +91,40 @@ compilation terminated.
 make[2]: *** [CMakeFiles/misterda.zip.dir/lua_zip.c.o] Error 1
 make[1]: *** [CMakeFiles/misterda.zip.dir/all] Error 2
 make: *** [all] Error 2
+
+- **Error:** Error installing: Error building package 'lua-libzip 0.1.0-1': Could not build with CMake in directory '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/lua-libzip 0.1.0-1-build'
+stdout:
+Scanning dependencies of target misterda.zip
+[ 50%] Building C object CMakeFiles/misterda.zip.dir/lua_zip.c.o
+
+stderr:
+/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/tmp/lua-libzip 0.1.0-1/lua_zip.c:6:17: fatal error: zip.h: No such file or directory
+ #include <zip.h>
+                 ^
+compilation terminated.
+make[2]: *** [CMakeFiles/misterda.zip.dir/lua_zip.c.o] Error 1
+make[1]: *** [CMakeFiles/misterda.zip.dir/all] Error 2
+make: *** [all] Error 2
+
+
+# Report for task 'require'
+
+ -  - `require "misterda.zip"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: (command line):1: module 'misterda.zip' not found:
+	no field package.preload['misterda.zip']
+	no file '/home/travis/build/LuaDist-testing/lua-libzip/../_travis_scripts/misterda/zip.lua'
+	no file './misterda/zip.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/misterda/zip.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/misterda/zip/init.lua'
+	no file './misterda/zip/init.lua'
+	no file './misterda/zip.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/misterda/zip.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+	no file './misterda.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/misterda.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
 
