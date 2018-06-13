@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 opentracing'
 
 
@@ -93,3 +95,73 @@
 
 ### luaossl 20180530-0
 - **Error:** Could not find rockspec for package 'luaossl 20180530-0', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/luaossl 20180530-0/luaossl-20180530-0.rockspec'
+- **Error:** Error installing: Could not find rockspec for package 'luaossl 20180530-0', expected location: '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/luaossl 20180530-0/luaossl-20180530-0.rockspec'
+
+# Report for task 'require'
+
+ -  - `require "opentracing"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'opentracing' not found:
+	no field package.preload['opentracing']
+	no file '/home/travis/build/LuaDist-testing/opentracing/../_travis_scripts/opentracing.lua'
+	no file './opentracing.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/init.lua'
+	no file './opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "opentracing.span"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'opentracing.span' not found:
+	no field package.preload['opentracing.span']
+	no file '/home/travis/build/LuaDist-testing/opentracing/../_travis_scripts/opentracing/span.lua'
+	no file './opentracing/span.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span/init.lua'
+	no file './opentracing/span.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+	no file './opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "opentracing.span_context"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'opentracing.span_context' not found:
+	no field package.preload['opentracing.span_context']
+	no file '/home/travis/build/LuaDist-testing/opentracing/../_travis_scripts/opentracing/span_context.lua'
+	no file './opentracing/span_context.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span_context.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span_context/init.lua'
+	no file './opentracing/span_context.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/span_context.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+	no file './opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+ -  - `require "opentracing.tracer"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'opentracing.tracer' not found:
+	no field package.preload['opentracing.tracer']
+	no file '/home/travis/build/LuaDist-testing/opentracing/../_travis_scripts/opentracing/tracer.lua'
+	no file './opentracing/tracer.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/tracer.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/tracer/init.lua'
+	no file './opentracing/tracer.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing/tracer.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+	no file './opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/opentracing.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
+
