@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 lua-silva'
 
 
@@ -82,3 +84,29 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "Silva"` - OK
+ -  - `require "Silva.identity"` - OK
+ -  - `require "Silva.lua"` - OK
+ -  - `require "Silva.pcre"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...ut/lua 5.1.5-1/install/bin/../lib/lua/Silva/pcre.lua:8: module 'rex_pcre' not found:
+	no field package.preload['rex_pcre']
+	no file '/home/travis/build/LuaDist-testing/lua-silva/../_travis_scripts/rex_pcre.lua'
+	no file './rex_pcre.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/rex_pcre.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/rex_pcre/init.lua'
+	no file './rex_pcre/init.lua'
+	no file './rex_pcre.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/rex_pcre.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	...ut/lua 5.1.5-1/install/bin/../lib/lua/Silva/pcre.lua:8: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+ -  - `require "Silva.shell"` - OK
+ -  - `require "Silva.template"` - OK
+
