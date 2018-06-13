@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.3.2 properset'
 
 
@@ -88,4 +90,34 @@ CMake Error at cmake_install.cmake:36 (file):
   5.3.2/install/tmp/properset 0.3b-0/properset.lua/docs".
 
 
+
+- **Error:** Error installing: Could not install package 'properset 0.3b-0' from directory '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/tmp/properset 0.3b-0-build'
+stdout:
+-- Install configuration: ""
+
+stderr:
+CMake Error at cmake_install.cmake:36 (file):
+  file INSTALL cannot find
+  "/home/travis/build/LuaDist-testing/_luadist_output/lua
+  5.3.2/install/tmp/properset 0.3b-0/properset.lua/docs".
+
+
+
+
+# Report for task 'require'
+
+ -  - `require "properset"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/lua: (command line):1: module 'properset' not found:
+	no field package.preload['properset']
+	no file '/home/travis/build/LuaDist-testing/properset/../_travis_scripts/properset.lua'
+	no file './properset.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/properset.lua'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/properset/init.lua'
+	no file './properset.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/properset.so'
+	no file '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.3.2/install/bin/../lib/lua/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: in ?
+]]
 
