@@ -1,3 +1,5 @@
+# Report for task 'install'
+
 # Report for 'install lua 5.1.5-1 lua-dynamic-cors'
 
 
@@ -144,3 +146,16 @@
 
 - *hint:* If you wish to keep these directories, set the debug flag
 - Updating local manifest at '/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/share/luadist2/manifest-file'
+
+# Report for task 'require'
+
+ -  - `require "cors"` - FAIL - [[/home/travis/build/LuaDist-testing/_luadist_output/lua 5.1.5-1/install/bin/lua: ...t/lua 5.1.5-1/install/bin/../lib/lua/resty/redis.lua:6: attempt to index global 'ngx' (a nil value)
+stack traceback:
+	...t/lua 5.1.5-1/install/bin/../lib/lua/resty/redis.lua:6: in main chunk
+	[C]: in function 'require'
+	...t_output/lua 5.1.5-1/install/bin/../lib/lua/cors.lua:1: in main chunk
+	[C]: in function 'require'
+	(command line):1: in main chunk
+	[C]: ?
+]]
+
